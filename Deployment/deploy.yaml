@@ -13,13 +13,4 @@
         name: docker
         state: started
     - name: Running container
-      shell: docker run -it -d --name Calculator sarthakharne2262/calculator
-#- name: Pull and run docker image
-#  hosts: localhost
-#  tasks:
-#    - name: Cleanup
-#      shell: docker ps -aq --filter name="calculator" | xargs docker stop | xargs docker rm
-#    - name: Pull docker image
-#      shell: docker pull sarthakharne2262/calculator:latest
-#    - name: Run docker image
-#      shell: docker run -i -t  --name calculator -d sarthakharne2262/calculator:latest
+      shell: docker run -d --name Calculator sarthakharne2262/calculator
