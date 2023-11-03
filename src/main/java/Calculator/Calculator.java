@@ -11,9 +11,9 @@ public class Calculator {
     public static void menu(){
         System.out.println("Scientific Calculator");
         System.out.println("**************************");
-        System.out.println("1. Square root");
+        System.out.println("1. Square Root");
         System.out.println("2. Factorial");
-        System.out.println("3. Natural logarithm (base е)");
+        System.out.println("3. Natural Logarithm");
         System.out.println("4. Power");
         System.out.println("0. Exit");
         System.out.print("Enter your choice: ");
@@ -36,11 +36,11 @@ public class Calculator {
 
             switch(choice) {
                 case 1:
-                    System.out.print("Enter number: ");
+                    System.out.print("Enter Number: ");
                     num1 = sc.nextDouble();
                     ans = cal.mySqrt(num1);
                     if(ans == -1) {
-                        System.out.println("Invalid input");
+                        System.out.println("Invalid Input");
                     }
                     else {
                         System.out.println("Square root of " + num1 + " is " + ans);
@@ -48,11 +48,11 @@ public class Calculator {
                     break;
 
                 case 2:
-                    System.out.print("Enter number: ");
+                    System.out.print("Enter Number: ");
                     num1 = sc.nextDouble();
                     ans = cal.myFactorial(num1);
                     if(ans == -1) {
-                        System.out.println("Invalid input");
+                        System.out.println("Invalid Input");
                     }
                     else {
                         System.out.println("Factorial of " + num1 + " is " + ans);
@@ -60,11 +60,11 @@ public class Calculator {
                     break;
 
                 case 3:
-                    System.out.print("Enter number: ");
+                    System.out.print("Enter Number: ");
                     num1 = sc.nextDouble();
                     ans = cal.myLog(num1);
                     if(ans == -1) {
-                        System.out.println("Invalid input");
+                        System.out.println("Invalid Input");
                     }
                     else {
                         System.out.println("Natural logarithm (base е) of " + num1 + " is " + ans);
@@ -72,10 +72,10 @@ public class Calculator {
                     break;
 
                 case 4:
-                    System.out.print("Enter first number: ");
+                    System.out.print("Enter First Number: ");
                     num1 = sc.nextDouble();
 
-                    System.out.print("Enter second number: ");
+                    System.out.print("Enter Second Number: ");
                     num2 = sc.nextDouble();
 
                     ans = cal.myPow(num1, num2);
@@ -83,11 +83,11 @@ public class Calculator {
                     break;
 
                 case 0:
-                    System.out.println("Bye...");
+                    System.out.println("Exiting...");
                     break;
 
                 default:
-                    System.out.println("Invalid choice. Please try again.");
+                    System.out.println("Invalid Choice. Please try again.");
             }
             System.out.println();
         }
