@@ -9,6 +9,7 @@ public class Calculator {
         logger  = LogManager.getLogger(Calculator.class);
     }
     public static void menu(){
+
         System.out.println("Scientific Calculator");
         System.out.println("**************************");
         System.out.println("1. Square Root");
